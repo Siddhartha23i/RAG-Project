@@ -1,0 +1,202 @@
+FILENAME: GOOGLE_KNOWLEDGE_BASE_MASTER.txt
+VERSION: 2025.12.01
+TYPE: RAG_CONTEXT_SOURCE
+SUBJECT: GOOGLE LLC (ALPHABET INC.) - HISTORY, INFRASTRUCTURE, PRODUCTS, FINANCIALS
+CLASSIFICATION: UNCLASSIFIED / PUBLIC KNOWLEDGE
+
+================================================================================
+SECTION 1: CORPORATE IDENTITY & METADATA
+================================================================================
+ENTITY_NAME: Google LLC
+PARENT_ENTITY: Alphabet Inc. (Created Oct 2, 2015)
+STOCK_TICKERS: NASDAQ: GOOGL (Class A), NASDAQ: GOOG (Class C)
+FOUNDED_DATE: September 4, 1998
+INCORPORATION_PLACE: Menlo Park, California, USA
+CURRENT_HQ: 1600 Amphitheatre Parkway, Mountain View, CA 94043 (The "Googleplex")
+ORIGINAL_NAME: BackRub (1996)
+NAME_ORIGIN: "Googol" (Mathematical term for 1 followed by 100 zeros)
+MISSION_STATEMENT: "To organize the world's information and make it universally accessible and useful."
+UNOFFICIAL_MOTTO: "Don't be evil" (Historical) -> "Do the right thing" (Alphabet Code of Conduct)
+EMPLOYEE_COUNT: ~182,000 (Estimate Q4 2024/2025)
+
+KEY_LEADERSHIP_HISTORY:
+- Larry Page (Co-Founder, CEO 1998-2001, 2011-2015; Alphabet CEO 2015-2019)
+- Sergey Brin (Co-Founder, President; Alphabet President 2015-2019)
+- Eric Schmidt (CEO 2001-2011, Executive Chairman 2011-2017)
+- Sundar Pichai (Google CEO 2015-Present, Alphabet CEO 2019-Present)
+- Ruth Porat (CFO/CIO, President)
+- Demis Hassabis (CEO of Google DeepMind)
+- Thomas Kurian (CEO of Google Cloud)
+
+================================================================================
+SECTION 2: CHRONOLOGICAL TIMELINE (1996-2025)
+================================================================================
+[1996] "BackRub" search engine developed by Page and Brin at Stanford.
+[1997] Domain "google.com" registered on September 15.
+[1998] Company incorporated in Susan Wojcicki’s garage. $100k investment from Andy Bechtolsheim.
+[1999] Moved to Palo Alto. $25M funding from Sequoia and Kleiner Perkins.
+[2000] AdWords launched (Self-service advertising model). Became default Yahoo! search provider.
+[2001] Eric Schmidt hired as CEO ("Adult Supervision"). Google Images launched.
+[2002] Google News launched. Yahoo! attempts acquisition for $3B (rejected).
+[2003] AdSense launched (contextual ads for publishers). Moved to Googleplex.
+[2004] IPO (Initial Public Offering) at $85/share. Gmail launched (beta) with 1GB storage. Orkut launched.
+[2005] Google Maps, Google Earth, Google Talk launched. Android Inc. acquired ($50M).
+[2006] YouTube acquired ($1.65B). Google Docs/Spreadsheets (now Sheets) launched.
+[2007] DoubleClick acquired ($3.1B). Street View launched. Android announced (Open Handset Alliance).
+[2008] Google Chrome browser launched. T-Mobile G1 (first Android phone) released.
+[2009] AdMob acquired ($750M). Google Voice launched.
+[2010] Google Buzz (failed). Nexus One phone released.
+[2011] Larry Page returns as CEO. Google+ launched (social network). Motorola Mobility acquired ($12.5B).
+[2012] Google Drive launched. Knowledge Graph introduced. Google Glass demoed.
+[2013] Waze acquired ($966M). Chromecast released. Google Reader shutdown (infamous).
+[2014] DeepMind acquired ($500M+). Nest Labs acquired ($3.2B). Motorola sold to Lenovo ($2.9B).
+[2015] CORPORATE RESTRUCTURE: Alphabet Inc. formed. Sundar Pichai becomes Google CEO.
+[2016] "AI First" strategy announced. Google Assistant, Google Home, Pixel phone launched. Waymo spun out.
+[2017] AlphaGo defeats Ke Jie. HTC mobile division talent acquired ($1.1B).
+[2018] "Don't be evil" removed from preface of code of conduct. Duplex AI demo.
+[2019] Page and Brin step down from daily roles; Pichai takes over Alphabet. Stadia launched.
+[2020] Google Workspace rebrand (formerly G Suite). Antitrust lawsuits from DOJ.
+[2021] Fitbit acquisition completed ($2.1B). LaMDA (Language Model) introduced.
+[2022] Mandiant acquired ($5.4B). Code Red declared on AI due to ChatGPT release.
+[2023] Bard (chatbot) launched. Gemini model announced. DeepMind and Google Brain merge.
+[2024] Gemini rebrand (Bard becomes Gemini). Major layoffs (~12,000 employees). 
+[2025] Focus on AGI (Artificial General Intelligence), Quantum Computing milestones, and regulatory battles (Ad tech monopoly trials).
+
+================================================================================
+SECTION 3: TECHNICAL INFRASTRUCTURE (THE "GOOGLE STACK")
+================================================================================
+DATA_CENTERS:
+- Global network of hyperscale data centers (The Dalles, Council Bluffs, Hamina, St. Ghislain, etc.).
+- Custom Hardware: TPUs (Tensor Processing Units) for AI workloads, Argos VCU for YouTube.
+
+SOFTWARE_INFRASTRUCTURE:
+1. GFS (Google File System) / Colossus: Distributed file system replacement for GFS.
+2. MapReduce: Historical framework for processing large data sets (replaced largely by Flume/Cloud Dataflow).
+3. BigTable: Distributed storage system for structured data.
+4. Spanner: Globally distributed, synchronously replicated database (TrueTime API using atomic clocks).
+5. Borg: Cluster manager (precursor to Kubernetes) for scheduling jobs.
+6. Chubby: Lock service for loosely coupled distributed systems.
+7. Protocol Buffers (Protobuf): Language-neutral serialization format.
+8. GRPC: High-performance RPC framework.
+
+AI_FRAMEWORKS:
+- TensorFlow: Open-source machine learning library.
+- JAX: High-performance numerical computing (autodiff).
+- Keras: High-level neural networks API (integrated).
+
+================================================================================
+SECTION 4: PRODUCT ECOSYSTEM
+================================================================================
+CATEGORY: SEARCH & INFORMATION
+- Google Search: Market leader (>90% share). Algorithms: PageRank, Panda, Penguin, Hummingbird, BERT, MUM.
+- Google Maps: Navigation, Street View, Earth.
+- Google News: Aggregation service.
+- Google Flights / Travel: Booking engine.
+
+CATEGORY: COMMUNICATION & PRODUCTIVITY (WORKSPACE)
+- Gmail: Email service.
+- Google Drive: Cloud storage.
+- Docs/Sheets/Slides: Office suite.
+- Google Meet: Video conferencing (merged with Duo).
+- Google Calendar: Scheduling.
+- Google Chat: Messaging (Enterprise).
+
+CATEGORY: OPERATING SYSTEMS & BROWSERS
+- Android: Mobile OS (Open Source Project - AOSP).
+- ChromeOS: Lightweight OS for Chromebooks.
+- Google Chrome: Web browser (Blink engine).
+- Wear OS: Smartwatch OS.
+
+CATEGORY: HARDWARE
+- Pixel: Smartphones (A-series, Pro, Fold), Tablets, Buds.
+- Nest: Smart home (Thermostats, Cameras, Doorbells, Hubs).
+- Fitbit: Health trackers and watches.
+- Chromecast / Google TV Streamer: Media streaming.
+
+CATEGORY: ENTERPRISE & CLOUD
+- Google Cloud Platform (GCP): Compute Engine, App Engine, Cloud Storage, BigQuery, Vertex AI.
+- Google Workspace (Enterprise): Business tier productivity.
+- Google Ad Manager / AdSense / AdMob: Advertising tech stack.
+
+CATEGORY: VIDEO & MEDIA
+- YouTube: Long-form video, Shorts, Music, TV.
+- YouTube Premium/Music: Subscription services.
+
+CATEGORY: THE "GOOGLE GRAVEYARD" (DISCONTINUED)
+- Google+: Social network (2011-2019).
+- Google Reader: RSS feed aggregator (2005-2013).
+- Google Stadia: Cloud gaming (2019-2023).
+- Google Glass (Consumer edition): AR eyewear.
+- Google Hangouts: Chat app (replaced by Chat/Meet).
+- Inbox by Gmail: Email client.
+- Loon: Internet balloons.
+- Picasa: Photo manager (replaced by Photos).
+
+================================================================================
+SECTION 5: ARTIFICIAL INTELLIGENCE (DEEPMIND & BRAIN)
+================================================================================
+LABS:
+- Google DeepMind: Formed by merger of Google Brain and DeepMind in 2023.
+- Key Achievements: AlphaGo (Go), AlphaFold (Protein folding), AlphaStar (StarCraft II), WaveNet (Voice).
+
+MODELS:
+- Transformer (2017): "Attention Is All You Need" paper (Foundation of modern LLMs).
+- BERT (2018): Bidirectional Encoder Representations from Transformers.
+- Meena (2020): Conversational agent.
+- LaMDA (2021): Language Model for Dialogue Applications.
+- PaLM / PaLM 2 (2022/2023): Pathways Language Model.
+- Gemini (2023/2024): Multimodal model (Nano, Flash, Pro, Ultra).
+- Imagen: Text-to-image diffusion model.
+
+================================================================================
+SECTION 6: MAJOR ACQUISITIONS LEDGER
+================================================================================
+[2005] Android Inc. ($50M) - The OS.
+[2006] YouTube ($1.65B) - Video dominance.
+[2007] DoubleClick ($3.1B) - Ad tech backbone.
+[2009] AdMob ($750M) - Mobile ads.
+[2011] ITA Software ($700M) - Flight data (Google Flights).
+[2011] Motorola Mobility ($12.5B) - Patent portfolio (sold hardware to Lenovo).
+[2013] Waze ($966M) - Social traffic data.
+[2014] DeepMind ($500M) - AI research.
+[2014] Nest Labs ($3.2B) - Smart home.
+[2019] Looker ($2.6B) - Data analytics (Cloud).
+[2021] Fitbit ($2.1B) - Wearables.
+[2022] Mandiant ($5.4B) - Cybersecurity.
+
+================================================================================
+SECTION 7: ANTITRUST & CONTROVERSIES
+================================================================================
+EUROPEAN UNION:
+- Shopping Case (2017): €2.42B fine (Favoring own comparison shopping).
+- Android Case (2018): €4.34B fine (Illegal restrictions on Android device makers).
+- AdSense Case (2019): €1.49B fine (Abusive practices in online ads).
+
+UNITED STATES:
+- US v. Google (2020/2023): DOJ lawsuit alleging monopoly in Search and Search Advertising.
+- US v. Google (2023): DOJ lawsuit alleging monopoly in Ad Technology stack.
+- Epic Games v. Google: Jury found Google Play Store an illegal monopoly (2023).
+
+PRIVACY:
+- Project Dragonfly: Censored search engine for China (Cancelled after employee protest).
+- Project Maven: AI for DoD drone footage (Contract expired after employee protest).
+- GDPR fines in EU.
+
+================================================================================
+SECTION 8: REVENUE STRUCTURE
+================================================================================
+PRIMARY SOURCE: "Google Services"
+1. Google Search & Other: Traditional text ads.
+2. YouTube Ads: Video advertising.
+3. Google Network: Ads served on non-Google sites (AdSense/AdMob).
+
+SECONDARY SOURCE: "Google Cloud"
+- Revenue from GCP infrastructure and Workspace subscriptions.
+
+TERTIARY SOURCE: "Other Bets" (Alphabet)
+- Waymo (Autonomous driving), Verily (Life sciences), Wing (Drones).
+- Historically loss-making, viewed as R&D investment.
+
+================================================================================
+END OF FILE
+================================================================================

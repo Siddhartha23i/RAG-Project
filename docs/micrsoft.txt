@@ -1,0 +1,186 @@
+FILENAME: MICROSOFT_KNOWLEDGE_BASE_MASTER.txt
+VERSION: 2025.12.07
+TYPE: RAG_CONTEXT_SOURCE
+SUBJECT: MICROSOFT CORP - HISTORY, INFRASTRUCTURE, PRODUCTS, FINANCIALS
+CLASSIFICATION: UNCLASSIFIED / PUBLIC KNOWLEDGE
+
+================================================================================
+SECTION 1: CORPORATE IDENTITY & METADATA
+================================================================================
+ENTITY_NAME: Microsoft Corporation
+STOCK_TICKER: NASDAQ: MSFT
+FOUNDED_DATE: April 4, 1975
+FOUNDERS: Bill Gates, Paul Allen
+INCORPORATION_PLACE: Albuquerque, New Mexico (Original), Redmond, Washington (Current)
+CURRENT_HQ: One Microsoft Way, Redmond, WA 98052, USA
+MISSION_STATEMENT: "To empower every person and every organization on the planet to achieve more."
+EMPLOYEE_COUNT: ~228,000 (Estimate Q4 2025)
+MARKET_CAP: Trillion-dollar class (Fluctuates; consistently top 3 most valuable globally).
+
+KEY_LEADERSHIP_HISTORY:
+- Bill Gates (CEO 1975-2000, Chairman until 2014)
+- Steve Ballmer (CEO 2000-2014)
+- Satya Nadella (CEO 2014-Present, Chairman 2021-Present)
+- Amy Hood (CFO)
+- Brad Smith (Vice Chair & President)
+- Kevin Scott (CTO, Driver of AI strategy)
+- Phil Spencer (CEO of Microsoft Gaming)
+
+================================================================================
+SECTION 2: CHRONOLOGICAL TIMELINE (1975-2025)
+================================================================================
+[1975] Founded in Albuquerque to develop BASIC interpreters for the Altair 8800.
+[1979] Headquarters moved to Bellevue, Washington.
+[1980] Partnered with IBM to bundle an OS for the IBM PC. Microsoft licensed "86-DOS" to create MS-DOS.
+[1985] Windows 1.0 released. First retail version of Windows.
+[1986] IPO (Initial Public Offering) at $21/share.
+[1990] Windows 3.0 launched; Office suite introduced (bundling Word, Excel, PowerPoint).
+[1995] Windows 95 launched (Start button introduced). Internet Explorer bundled ("Browser Wars").
+[1998] DOJ Antitrust Lawsuit filed (US v. Microsoft) regarding monopoly abuse.
+[2000] Steve Ballmer becomes CEO. Bill Gates transitions to Chief Software Architect.
+[2001] Windows XP released. Original Xbox console launched (entry into gaming hardware).
+[2008] Azure (Cloud computing platform) announced; launched 2010.
+[2009] Bing search engine launched.
+[2011] Skype acquired ($8.5B).
+[2012] Surface line launched (Microsoft's first major PC hardware). Yammer acquired.
+[2013] Nokia mobile unit acquired ($7.2B) - later written off as a failure.
+[2014] Satya Nadella named CEO. Shift to "Mobile First, Cloud First" strategy. Minecraft (Mojang) acquired ($2.5B).
+[2016] LinkedIn acquired ($26.2B).
+[2018] GitHub acquired ($7.5B).
+[2019] Microsoft invests $1B in OpenAI. Teams surpasses Slack in daily users.
+[2021] Market cap hits $2 Trillion. Windows 11 released. Nuance Communications acquired ($19.7B).
+[2022] Activision Blizzard acquisition announced ($68.7B).
+[2023] "New Bing" launched with GPT-4. Microsoft 365 Copilot announced.
+[2023] Activision Blizzard deal closes (October) after regulatory battles with FTC/CMA.
+[2024] Copilot key added to Windows keyboards (first layout change in decades).
+[2025] "Project Stargate" (AI Supercomputer) plans leaked/rumored.
+[2025] (Oct) New agreement with OpenAI: Microsoft holds ~27% stake in OpenAI Group PBC; IP rights extended to 2032.
+
+================================================================================
+SECTION 3: TECHNICAL INFRASTRUCTURE (THE "AZURE STACK")
+================================================================================
+CLOUD INFRASTRUCTURE (AZURE):
+- Regions: 60+ global regions (more than AWS/Google).
+- Key Zones: US East/West, West Europe, Southeast Asia, etc.
+- Underwater Datacenters: Project Natick (experimental).
+
+HARDWARE & SILICON:
+- Maia 100: Custom AI accelerator chip (ASIC) designed for Azure training/inference.
+- Cobalt 100: Custom Arm-based CPU for general cloud workloads.
+- HoloLens: Mixed reality headsets (Industrial/Military focus).
+
+SOFTWARE STACK:
+1. Windows Core OS: Modular base for Windows versions.
+2. Hyper-V: Virtualization technology backing Azure.
+3. .NET Framework / .NET Core: Developer ecosystem.
+4. TypeScript: Superset of JavaScript developed by Microsoft.
+5. Power Platform: Low-code tools (Power BI, Power Apps).
+
+AI INFRASTRUCTURE:
+- Massive GPU clusters (NVIDIA H100/Blackwell) built for OpenAI.
+- "Eagle" and other internal supercomputers (Top 500 list).
+
+================================================================================
+SECTION 4: PRODUCT ECOSYSTEM
+================================================================================
+CATEGORY: PRODUCTIVITY & BUSINESS (MICROSOFT 365)
+- Word, Excel, PowerPoint: The "Office" standard.
+- Outlook/Exchange: Email and calendar.
+- Teams: Collaboration hub (Chat, Meetings, Files).
+- OneNote: Note-taking.
+- OneDrive: Cloud storage.
+- SharePoint: Intranet and content management.
+
+CATEGORY: CLOUD & SERVER (INTELLIGENT CLOUD)
+- Azure: IaaS, PaaS, SaaS. Services: Virtual Machines, SQL Database, Cosmos DB, Azure AI.
+- Windows Server: Enterprise OS.
+- SQL Server: Relational database management.
+- Visual Studio / VS Code: Dominant IDEs for developers.
+- GitHub: Code repository and CI/CD platform (Copilot embedded).
+
+CATEGORY: PERSONAL COMPUTING (MORE PERSONAL COMPUTING)
+- Windows: OS for PC (Windows 10, Windows 11).
+- Surface: Laptops, Pros, Studios, Go.
+- Bing/Edge: Search and Browser (Chromium-based).
+
+CATEGORY: GAMING (XBOX)
+- Hardware: Xbox Series X|S.
+- Services: Xbox Game Pass (Subscription model), Xbox Cloud Gaming (xCloud).
+- Studios: Xbox Game Studios, Bethesda (ZeniMax), Activision Blizzard, King, Mojang.
+- Key Franchises: Call of Duty, Minecraft, Halo, Elder Scrolls, Fallout, Candy Crush, Warcraft.
+
+CATEGORY: BUSINESS SOLUTIONS
+- Dynamics 365: ERP (Enterprise Resource Planning) and CRM (Customer Relationship Management).
+- LinkedIn: Professional networking, Talent Solutions, Sales Navigator.
+
+================================================================================
+SECTION 5: ARTIFICIAL INTELLIGENCE (MICROSOFT AI)
+================================================================================
+PARTNERSHIPS:
+- OpenAI: Strategic partner. Microsoft provides compute (Azure) in exchange for commercializing models (GPT-4, DALL-E 3) into products.
+- Mistral AI: Investment and Azure hosting partnership.
+
+PRODUCTS (COPILOT):
+- Microsoft 365 Copilot: AI integrated into Word, Excel, PPT, Outlook.
+- GitHub Copilot: AI pair programmer.
+- Security Copilot: AI for threat detection.
+- Windows Copilot: System-level AI assistant.
+
+MODELS (INTERNAL):
+- Phi (Phi-1, Phi-2, Phi-3): Small Language Models (SLMs) optimized for efficiency/edge devices.
+- Turing: Natural Language Generation (NLG) models.
+- Florence: Computer vision foundation models.
+
+================================================================================
+SECTION 6: MAJOR ACQUISITIONS LEDGER
+================================================================================
+[1987] Forethought ($14M) - Became PowerPoint.
+[1997] Hotmail ($500M) - Webmail.
+[2000] Visio ($1.3B) - Diagramming.
+[2002] Navision ($1.4B) - Became Dynamics.
+[2007] aQuantive ($6.3B) - Digital advertising (Written off).
+[2011] Skype ($8.5B) - Communications.
+[2012] Yammer ($1.2B) - Enterprise social.
+[2013] Nokia Devices ($7.2B) - Mobile hardware (Written off).
+[2014] Mojang ($2.5B) - Minecraft.
+[2016] LinkedIn ($26.2B) - Professional network.
+[2018] GitHub ($7.5B) - Developer platform.
+[2021] ZeniMax Media ($7.5B) - Gaming (Bethesda/Doom/Fallout).
+[2021] Nuance Communications ($19.7B) - Speech AI/Healthcare.
+[2022] Xandr ($1B+) - Advertising (from AT&T).
+[2023] Activision Blizzard ($68.7B) - Largest acquisition in tech history (Call of Duty, WoW).
+
+================================================================================
+SECTION 7: CONTROVERSIES & ANTITRUST
+================================================================================
+ANTITRUST (90s/00s):
+- US v. Microsoft: Accused of monopolizing the PC market by bundling Internet Explorer with Windows to kill Netscape. Settled in 2001 (avoided breakup).
+- EU Browser Choice Screen: Fined for failing to offer browser choice.
+
+MODERN REGULATORY:
+- Cloud Licensing: Accusations by EU providers (CISPE) regarding unfair licensing costs for running Windows/Office on non-Azure clouds (Settled 2024).
+- Activision Blizzard: FTC and UK CMA blocked the deal initially; passed after concessions (cloud gaming rights sold to Ubisoft in certain regions).
+
+SECURITY:
+- SolarWinds Hack (2020): Microsoft code repositories accessed.
+- Exchange Server Hafnium (2021): Massive zero-day exploits.
+- Storm-0558 (2023): Chinese hackers stole signing key to access US gov emails.
+
+================================================================================
+SECTION 8: REVENUE STRUCTURE
+================================================================================
+REPORTING SEGMENTS:
+1. Productivity and Business Processes (Office, LinkedIn, Dynamics).
+2. Intelligent Cloud (Azure, Server products, Enterprise Services).
+   - *This is often the largest revenue driver.*
+3. More Personal Computing (Windows, Devices, Gaming, Search).
+
+KEY REVENUE DRIVERS:
+- Azure consumption (Compute/Storage/AI).
+- Office 365 Commercial Subscriptions (E3/E5 licenses).
+- LinkedIn Marketing Solutions.
+- Gaming Content & Services (Game Pass, Microtransactions).
+
+================================================================================
+END OF FILE
+================================================================================
