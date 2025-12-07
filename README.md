@@ -1,44 +1,53 @@
-# Learning-AI-2025
-# 🚀 Learning AI 2025 - ML/LLM/MLOps Engineer Roadmap
+# 🏢 TechTitan RAG: IT Giants Knowledge Base
 
-**12-Week Intensive Journey to become ML/LLM/MLOps Engineer (₹15-25 LPA roles)**  
-*From Python basics → Production ML systems → Job-ready portfolio*
+**TechTitan RAG** is a Retrieval-Augmented Generation (RAG) system designed to provide accurate, context-aware answers about the world's top 5 Information Technology companies (Google, Microsoft, Apple, Amazon, Meta). 
 
----
-
-## 🎯 **Mission**
-Transform from **"knows ML theory, no practical experience"** to **"production-ready ML Engineer"** in 90 days.
-
-**Target Roles**: ML Engineer | LLMOps Engineer | MLOps Engineer | AI Engineer  
-**Timeline**: Dec 2025 - Feb 2026 (Summer Internship Ready)  
-**Daily Commitment**: 4-5 hours  
-**Budget**: ₹0 (100% Free Resources)
-
----
----
-
-## 📊 **Progress Tracker**
-
-| Week | Focus | Status | Projects Shipped |
-|------|-------|--------|------------------|
-| 1️⃣ | Python + Git | ✅ Complete | GitHub setup |
-| 2️⃣ | NumPy + Pandas | ⏳ In Progress | Real Estate EDA |
-| 3️⃣ | Data Viz + Stats | ⏳ | Stock Prediction |
-| 4️⃣ | Linear Regression | ⏳ | First ML Model |
-| 5️⃣ | Classification | ⏳ | Titanic Kaggle |
-| 6️⃣ | Ensemble Methods | ⏳ | House Prices |
-| 7️⃣ | XGBoost + Tuning | ⏳ | Competition Top 10% |
-| 8️⃣ | Feature Engineering | ⏳ | Production Pipeline |
-| 9️⃣ | Neural Networks | ⏳ | CIFAR-10 CNN |
-| 🔟 | PyTorch + Transfer Learning | ⏳ | 90%+ Accuracy |
-| 1️⃣1️⃣ | NLP + Transformers | ⏳ | BERT Fine-tuning |
-| 1️⃣2️⃣ | Capstone + Deployment | ⏳ | Live API + Streamlit |
-
-**Kaggle Rank**: [Update weekly]  
-**LeetCode Solved**: 1/50  
-**GitHub Commits**: [8]
+This project implements a full end-to-end pipeline, including a **Data Injection/Ingestion System** to process raw company profiles and a **Retrieval System** to answer natural language queries based on that structured data.
 
 ---
 
-## 🛠️ **Tech Stack Mastery (Week-by-Week)**
+## 🚀 Project Overview
 
+Standard LLMs often hallucinate specifics or lack the most up-to-date corporate structures. This system solves that by grounding answers in a curated "knowledge base" of structured text files.
+
+### Key Features
+* **Knowledge Base:** Specialized detailed profiles for Google, Microsoft, Apple, Amazon, and Meta.
+* **Injection Pipeline:** Automates the loading, chunking, and vectorization of text data.
+* **Semantic Search:** Uses vector embeddings to find the most relevant paragraphs for a user's question.
+* **Contextual Q&A:** Generates precise answers citing facts from the injected documents.
+
+---
+
+## 🛠️ Architecture
+
+The project consists of two main workflows:
+
+### 1. The Injection Pipeline (Ingestion)
+1.  **Load:** Reads structured `.txt` files (e.g., `GOOGLE_KNOWLEDGE_BASE.txt`) from the `data/` directory.
+2.  **Chunk:** Splits long documents into manageable segments (e.g., 500-1000 characters) with overlap to preserve context.
+3.  **Embed:** Converts text chunks into vector embeddings using an Embedding Model (e.g., OpenAI, HuggingFace).
+4.  **Store:** Saves vectors into a Vector Database (e.g., ChromaDB, FAISS, Pinecone).
+
+### 2. The Retrieval System (Inference)
+1.  **Query:** User asks a question (e.g., *"What companies did Google acquire in 2014?"*).
+2.  **Retrieve:** System finds the top $k$ most similar chunks from the Vector DB.
+3.  **Generate:** An LLM receives the question + relevant chunks and synthesizes an answer.
+
+---
+
+## 📂 Directory Structure
+
+```bash
+TechTitan-RAG/
+├── data/                      # Place your company .txt files here
+│   ├── google_profile.txt
+│   ├── microsoft_profile.txt
+│   └── ...
+├── src/
+│   ├── ingestion.py           # Script to chunk and load data to Vector DB
+│   ├── retrieval.py           # RAG logic (Search + LLM generation)
+│   └── vector_store.py        # DB connection/setup logic
+├── main.py                    # Entry point for the CLI/App
+├── requirements.txt           # Python dependencies
+├── .env                       # API Keys (OpenAI, HuggingFace, etc.)
+└── README.md                  # This file
