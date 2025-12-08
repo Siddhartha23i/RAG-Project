@@ -4,7 +4,7 @@
 
 This project implements a full end-to-end pipeline, including a **Data Injection/Ingestion System** to process raw company profiles and a **Retrieval System** to answer natural language queries based on that structured data.
 
----
+-----
 
 ## 🚀 Project Overview
 
@@ -16,7 +16,7 @@ Standard LLMs often hallucinate specifics or lack the most up-to-date corporate 
 * **Semantic Search:** Uses vector embeddings to find the most relevant paragraphs for a user's question.
 * **Contextual Q&A:** Generates precise answers citing facts from the injected documents.
 
----
+-----
 
 ## 🛠️ Architecture
 
@@ -33,7 +33,7 @@ The project consists of two main workflows:
 2.  **Retrieve:** System finds the top $k$ most similar chunks from the Vector DB.
 3.  **Generate:** An LLM receives the question + relevant chunks and synthesizes an answer.
 
----
+-----
 
 ## 📂 Directory Structure
 
