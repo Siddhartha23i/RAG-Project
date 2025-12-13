@@ -52,4 +52,18 @@ Please provide a clear, helpful answer using only the information from these doc
 # Create a ChatOpenAI model
 model = ChatOpenAI(model="gpt-4o")
 
+# Define the messages for the model
+messages = [
+    SystemMessage(content="You are a helpful assistant."),
+    HumanMessage(content=combined_input),
+]
 
+# Invoke the model with the combined input
+result = model.invoke(messages)
+
+# Display the full result and content only
+print("\n--- Generated Response ---")
+# print("Full result:")
+# print(result)
+print("Content only:")
+print(result.content)
