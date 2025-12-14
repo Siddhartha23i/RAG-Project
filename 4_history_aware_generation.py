@@ -39,3 +39,20 @@ def ask_question(user_question):
     retriever = db.as_retriever(search_kwargs={"k": 3})
     docs = retriever.invoke(search_question)
     
+    print(f"Found {len(docs)} relevant documents:")
+    for i, doc in enumerate(docs, 1):
+        # Show first 2 lines of each document
+        lines = doc.page_content.split('\n')[:2]
+        preview = '\n'.join(lines)
+        print(f"  Doc {i}: {preview}...")
+    
+    # Step 3: Create final prompt
+    combined_input = f"""Based on the following documents, please answer this question: {user_question}
+
+    Documents:
+    {"\n".join([f"- {doc.page_content}" for doc in docs])}
+
+    Please provide a clear, helpful answer using only the information from these documents. If you can't find the answer in the documents, say "I don't have enough information to answer that question based on the provided documents."
+    """
+    
+ 
