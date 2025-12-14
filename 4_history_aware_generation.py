@@ -55,4 +55,36 @@ def ask_question(user_question):
     Please provide a clear, helpful answer using only the information from these documents. If you can't find the answer in the documents, say "I don't have enough information to answer that question based on the provided documents."
     """
     
- 
+    # Step 4: Get the answer
+    messages = [
+        SystemMessage(content="You are a helpful assistant that answers questions based on provided documents and conversation history."),
+    ] + chat_history + [
+        HumanMessage(content=combined_input)
+    ]
+    
+    result = model.invoke(messages)
+    answer = result.content
+    
+    # Step 5: Remember this conversation
+    chat_history.append(HumanMessage(content=user_question))
+    chat_history.append(AIMessage(content=answer))
+    
+    print(f"Answer: {answer}")
+    return answer
+
+# Simple chat loop
+def start_chat():
+    print("Ask me questions! Type 'quit' to exit.")
+    
+    while True:
+        question = input("\nYour question: ")
+        
+        if question.lower() == 'quit':
+            print("Goodbye!")
+            break
+            
+        ask_question(question)
+
+if __name__ == "__main__":
+    start_chat()
+
