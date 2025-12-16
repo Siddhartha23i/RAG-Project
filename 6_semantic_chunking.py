@@ -37,5 +37,6 @@ for i, chunk in enumerate(chunks, 1):
     print()
 
 chunks = semantic_splitter.split_text(tesla_text)
+#Complete of semantic chunking
 
 
