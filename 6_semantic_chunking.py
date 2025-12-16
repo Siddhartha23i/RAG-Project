@@ -22,3 +22,12 @@ Supply chain issues caused a 12% increase in production costs.
 Tesla is working to diversify its supplier base.
 New manufacturing techniques are being implemented to reduce costs."""
 
+# Semantic Chunker - groups by meaning, not structure
+semantic_splitter = SemanticChunker(
+    embeddings=OpenAIEmbeddings(),
+    breakpoint_threshold_type="percentile",  # or "standard_deviation"
+    breakpoint_threshold_amount=70
+)
+
+chunks = semantic_splitter.split_text(tesla_text)
+
