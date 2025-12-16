@@ -29,5 +29,13 @@ semantic_splitter = SemanticChunker(
     breakpoint_threshold_amount=70
 )
 
+print("SEMANTIC CHUNKING RESULTS:")
+print("=" * 50)
+for i, chunk in enumerate(chunks, 1):
+    print(f"Chunk {i}: ({len(chunk)} chars)")
+    print(f'"{chunk}"')
+    print()
+
 chunks = semantic_splitter.split_text(tesla_text)
+
 
