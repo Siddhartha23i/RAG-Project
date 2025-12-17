@@ -38,4 +38,18 @@ Text:
 
 Return the text with <<<SPLIT>>> markers where you want to split:
 """
+# Get AI response
+print("🤖 Asking AI to chunk the text...")
+response = llm.invoke(prompt)
+marked_text = response.content
+
+# Split the text at the markers
+chunks = marked_text.split("<<<SPLIT>>>")
+
+# Clean up the chunks (remove extra whitespace)
+clean_chunks = []
+for chunk in chunks:
+    cleaned = chunk.strip()
+    if cleaned:  # Only keep non-empty chunks
+        clean_chunks.append(cleaned)
 
