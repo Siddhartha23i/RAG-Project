@@ -53,3 +53,13 @@ for chunk in chunks:
     if cleaned:  # Only keep non-empty chunks
         clean_chunks.append(cleaned)
 
+# Show results
+print("\n🎯 AGENTIC CHUNKING RESULTS:")
+print("=" * 50)
+
+for i, chunk in enumerate(clean_chunks, 1):
+    print(f"Chunk {i}: ({len(chunk)} chars)")
+    print(f'"{chunk}"')
+    print()
+
+
