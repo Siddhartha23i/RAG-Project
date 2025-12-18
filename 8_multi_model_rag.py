@@ -446,3 +446,35 @@
     "db = create_vector_store(processed_chunks)"
    ]
   },
+
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "28e54d37",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# After your retrieval\n",
+    "query = \"What are the two main components of the Transformer architecture? \"\n",
+    "retriever = db.as_retriever(search_kwargs={\"k\": 3})\n",
+    "chunks = retriever.invoke(query)\n",
+    "\n",
+    "# Export to JSON\n",
+    "export_chunks_to_json(chunks, \"rag_results.json\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9d76db6e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def run_complete_ingestion_pipeline(pdf_path: str):\n",
+    "    \"\"\"Run the complete RAG ingestion pipeline\"\"\"\n",
+    "    print(\"🚀 Starting RAG Ingestion Pipeline\")\n",
+    "    print(\"=\" * 50)\n",
+    "    \n",
+    "    # Step 1: Partition\n",
+    "    elements = partition_document(pdf_path)\n",
+    "    \n",
